@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const handleDownload = (e) => {
-        const confirmDownload = window.confirm("Would you like to download the resume?");
+        const confirmDownload = window.confirm("이력서를 다운로드하시겠습니까?");
         if (!confirmDownload) {
             e.preventDefault();
         }
@@ -16,8 +16,8 @@ const Navbar = () => {
             <Link to="/">PROJECTS</Link>
             <Link to="/about">ABOUT ME</Link>
             <a 
-                href="/YeonseoJung.pdf" 
-                download="YeonseoJung.pdf" 
+                href="/YeonseoJung_kr.pdf" 
+                download="YeonseoJung_kr.pdf" 
                 onClick={handleDownload}
             >
                 Download CV
